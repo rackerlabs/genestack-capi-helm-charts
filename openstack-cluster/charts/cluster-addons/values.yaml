@@ -222,13 +222,15 @@ metricsServer:
 
 # Settings for the Kubernetes dashboard
 # https://github.com/kubernetes/dashboard/tree/master/charts/helm-chart/kubernetes-dashboard
+# kubernetes-dashboard has been deprecated and removed https://groups.google.com/g/kubernetes-sig-ui/c/vpYIRDMysek/m/wd2iedUKDwAJ?utm_medium=email&utm_source=footer&pli=1
+# we need to switch to using headlamp dashboard for kubernetes
 kubernetesDashboard:
   # Indicates if the Kubernetes dashboard should be enabled
   enabled: false
   chart:
-    repo: https://kubernetes.github.io/dashboard
-    name: kubernetes-dashboard
-    version: 6.0.8
+    repo: https://kubernetes-sigs.github.io/headlamp/
+    name: headlamp
+    version: 0.45.0
   release:
     namespace: kubernetes-dashboard
     values: {}
