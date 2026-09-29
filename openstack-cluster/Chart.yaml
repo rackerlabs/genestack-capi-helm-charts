@@ -10,4 +10,4 @@ description: Helm chart for deploying a cluster on an OpenStack cloud using Clus
   API.
 name: openstack-cluster
 type: application
-version: 0.1.0
+version: 0.1.2
